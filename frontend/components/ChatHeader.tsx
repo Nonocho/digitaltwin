@@ -59,13 +59,13 @@ export default function ChatHeader() {
               letterSpacing: '0.14em',
             }}
           >
-            First Finance × Demes
+            Arnaud Demes, CFA
           </p>
 
           {/* Name — DM Serif Display */}
           <h2 className="font-display text-white leading-tight" style={{ fontSize: '17px' }}>
-            Arnaud Demes,{' '}
-            <span className="italic" style={{ color: '#8DD0F7' }}>CFA</span>
+            Arnaud&apos;s{' '}
+            <span className="italic" style={{ color: '#8DD0F7' }}>Digital Twin</span>
           </h2>
 
           {/* Subtitle */}
@@ -73,7 +73,7 @@ export default function ChatHeader() {
             className="font-brand mt-0.5 leading-tight truncate"
             style={{ fontSize: '12px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}
           >
-            AI &amp; Finance · Digital Twin
+            AI Engineer · Finance
           </p>
         </div>
 

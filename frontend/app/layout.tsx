@@ -26,14 +26,14 @@ const jetbrainsMono = JetBrains_Mono({
 
 export const metadata: Metadata = {
   title: "Arnaud Demes, CFA — Digital Twin",
-  description: "AI Career Twin representing Arnaud Demes — AI Engineering Leader · Amundi",
+  description: "Arnaud Demes, CFA — AI Engineer. Chat with Arnaud's Digital Twin.",
 };
 
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
   return (
-    <html lang="fr">
+    <html lang="en">
       <body
         className={`${dmSerifDisplay.variable} ${plusJakartaSans.variable} ${jetbrainsMono.variable} antialiased`}
       >

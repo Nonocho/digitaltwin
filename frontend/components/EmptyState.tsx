@@ -3,10 +3,8 @@
 import Image from 'next/image';
 
 const SUGGESTIONS = [
-  "Quel est ton parcours en IA & finance\u00a0?",
+  "What's your background in AI & finance?",
   "How do you see AI transforming asset management?",
-  "Quels projets sont ta plus grande fierté\u00a0?",
-  "Tell me about your experience at Amundi.",
 ];
 
 interface EmptyStateProps {
@@ -42,16 +40,16 @@ export default function EmptyState({ onSuggest }: EmptyStateProps) {
         className="font-display leading-tight mb-2"
         style={{ fontSize: '22px', color: '#03318C' }}
       >
-        Bonjour, je suis le Digital Twin{' '}
-        <em style={{ color: '#F28444' }}>d&apos;Arnaud</em>.
+        Hi, I&apos;m Arnaud&apos;s{' '}
+        <em style={{ color: '#F28444' }}>Digital Twin</em>.
       </h3>
 
       <p
         className="font-brand mb-8 max-w-xs leading-relaxed"
         style={{ fontSize: '14px', color: '#757575', fontWeight: 400 }}
       >
-        Posez-moi des questions sur l&apos;IA en finance, ma carrière,
-        ou les stratégies d&apos;investissement.
+        Ask me about AI in finance, my career,
+        or asset management.
       </p>
 
       {/* Suggestion chips */}

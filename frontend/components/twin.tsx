@@ -68,7 +68,7 @@ export default function Twin() {
       const errorMessage: Message = {
         id: (Date.now() + 1).toString(),
         role: 'assistant',
-        content: 'Désolé, une erreur est survenue. Veuillez réessayer.',
+        content: 'Sorry, an error occurred. Please try again.',
         timestamp: new Date(),
       };
       setMessages(prev => [...prev, errorMessage]);
@@ -133,7 +133,7 @@ export default function Twin() {
             value={input}
             onChange={(e) => setInput(e.target.value)}
             onKeyDown={handleKeyDown}
-            placeholder="Posez votre question…"
+            placeholder="Ask your question…"
             disabled={isLoading}
             autoFocus
             className="flex-1 px-4 py-2.5 rounded-xl font-brand transition-all duration-200 disabled:opacity-50 outline-none"
@@ -181,7 +181,7 @@ export default function Twin() {
           className="font-brand text-center mt-2"
           style={{ fontSize: '10px', color: '#BDBDBD', letterSpacing: '0.04em' }}
         >
-          Appuyez sur <kbd className="font-brand font-semibold text-gray-500">Entrée</kbd> pour envoyer
+          Press <kbd className="font-brand font-semibold text-gray-500">Enter</kbd> to send
         </p>
       </div>
     </div>

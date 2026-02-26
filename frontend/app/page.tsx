@@ -21,7 +21,7 @@ export default function Home() {
       {/* Brand footer */}
       <footer className="relative z-10 mt-5 text-center space-y-1">
         <p className="font-brand text-[11px] text-gray-500 tracking-brand uppercase">
-          Arnaud Demes — AI Engineering Leader · Amundi
+          Arnaud Demes, CFA — AI Engineer
         </p>
         <p className="font-brand text-[10px] text-gray-300">
           Powered by AWS Bedrock · Built with Terraform &amp; CI/CD
