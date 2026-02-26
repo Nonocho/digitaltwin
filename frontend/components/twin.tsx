@@ -15,6 +15,8 @@ export default function Twin() {
   const messagesEndRef = useRef<HTMLDivElement>(null);
   const inputRef = useRef<HTMLInputElement>(null);
 
+  const MAX_CHARS = 500;
+
   const scrollToBottom = () => {
     messagesEndRef.current?.scrollIntoView({ behavior: 'smooth' });
   };
@@ -85,18 +87,21 @@ export default function Twin() {
     }
   };
 
+  const charsLeft = MAX_CHARS - input.length;
+  const isNearLimit = charsLeft <= 60;
+
   return (
     <div
       className="flex flex-col h-full rounded-2xl overflow-hidden"
       style={{
         background: '#FFFFFF',
-        boxShadow: '0 4px 6px rgba(3,49,140,0.04), 0 24px 60px rgba(3,49,140,0.10), 0 0 0 1px rgba(3,49,140,0.08)',
+        boxShadow: '0 4px 6px rgba(3,49,140,0.04), 0 24px 60px rgba(3,49,140,0.12), 0 0 0 1px rgba(3,49,140,0.08)',
       }}
     >
-      {/* Header */}
-      <ChatHeader />
+      {/* Header — shows typing state */}
+      <ChatHeader isTyping={isLoading} />
 
-      {/* Messages area — Snow background */}
+      {/* Messages area */}
       <div className="relative flex-1 overflow-hidden" style={{ background: '#F2F2F2' }}>
         <div className="absolute inset-0 overflow-y-auto scrollbar-hidden p-5 space-y-4">
           {messages.length === 0 ? (
@@ -121,17 +126,17 @@ export default function Twin() {
         )}
       </div>
 
-      {/* Tangerine → Sky accent bar above input */}
+      {/* Accent bar above input */}
       <div className="h-px shrink-0" style={{ background: 'var(--gradient-accent)' }} />
 
-      {/* Input area — White */}
-      <div className="px-4 py-3.5 bg-white shrink-0">
+      {/* Input area */}
+      <div className="px-4 pt-3 pb-3 bg-white shrink-0">
         <div className="flex items-center gap-2">
           <input
             ref={inputRef}
             type="text"
             value={input}
-            onChange={(e) => setInput(e.target.value)}
+            onChange={(e) => setInput(e.target.value.slice(0, MAX_CHARS))}
             onKeyDown={handleKeyDown}
             placeholder="Ask your question…"
             disabled={isLoading}
@@ -154,35 +159,49 @@ export default function Twin() {
             }}
           />
 
-          {/* Send button — Tangerine CTA */}
+          {/* Send button */}
           <button
             onClick={() => sendMessage()}
             disabled={!input.trim() || isLoading}
             className="shrink-0 w-10 h-10 flex items-center justify-center rounded-xl font-brand font-semibold text-white transition-all duration-200 hover:scale-105 active:scale-95 disabled:opacity-40 disabled:cursor-not-allowed"
-            style={{ background: '#F28444' }}
+            style={{ background: 'var(--gradient-warm)' }}
             onMouseEnter={(e) => {
               if (!e.currentTarget.disabled) {
-                e.currentTarget.style.background = '#F7A871';
-                e.currentTarget.style.boxShadow = '0 4px 16px rgba(242,132,68,0.35)';
+                e.currentTarget.style.boxShadow = '0 4px 16px rgba(242,132,68,0.40)';
+                e.currentTarget.style.transform = 'scale(1.07)';
               }
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.background = '#F28444';
               e.currentTarget.style.boxShadow = 'none';
+              e.currentTarget.style.transform = 'scale(1)';
             }}
-            aria-label="Envoyer"
+            aria-label="Send"
           >
             <Send className="w-4 h-4" />
           </button>
         </div>
 
-        {/* Hint */}
-        <p
-          className="font-brand text-center mt-2"
-          style={{ fontSize: '10px', color: '#BDBDBD', letterSpacing: '0.04em' }}
-        >
-          Press <kbd className="font-brand font-semibold text-gray-500">Enter</kbd> to send
-        </p>
+        {/* Footer hint */}
+        <div className="flex items-center justify-between mt-1.5 px-1">
+          <p
+            className="font-brand"
+            style={{ fontSize: '10px', color: '#BDBDBD', letterSpacing: '0.04em' }}
+          >
+            Press <kbd className="font-brand font-semibold" style={{ color: '#757575' }}>Enter</kbd> to send
+          </p>
+          {isNearLimit && (
+            <p
+              className="font-brand transition-all duration-200"
+              style={{
+                fontSize: '10px',
+                color: charsLeft <= 20 ? '#BF2604' : '#BDBDBD',
+                letterSpacing: '0.04em',
+              }}
+            >
+              {charsLeft}
+            </p>
+          )}
+        </div>
       </div>
     </div>
   );

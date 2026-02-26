@@ -15,7 +15,7 @@ export default function TypingIndicator() {
           alt="Arnaud"
           width={28}
           height={28}
-          className="object-cover w-full h-full"
+          className="object-cover w-full h-full object-top"
         />
       </div>
 

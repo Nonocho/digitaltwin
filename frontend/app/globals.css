@@ -80,6 +80,22 @@
   40%           { transform: translateY(-5px); opacity: 0.5; }
 }
 
+@keyframes float-blob {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33%      { transform: translate(24px, -18px) scale(1.04); }
+  66%      { transform: translate(-12px, 10px) scale(0.97); }
+}
+
+@keyframes fade-up {
+  from { opacity: 0; transform: translateY(10px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shimmer-avatar {
+  0%, 100% { box-shadow: 0 0 0 3px #03318C, 0 0 18px rgba(75,178,242,0.25); }
+  50%      { box-shadow: 0 0 0 3px #0A4BBF, 0 0 28px rgba(75,178,242,0.45); }
+}
+
 @keyframes pulse-online {
   0%, 100% { opacity: 1;    transform: scale(1);    }
   50%      { opacity: 0.55; transform: scale(0.85); }

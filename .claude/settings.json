@@ -7,7 +7,11 @@
       "Bash(aws cloudfront update-distribution --id E7PZAVC3329QZ --if-match E1F83G8C2ARO7P --distribution-config file:///tmp/cf_config_clean.json)",
       "Bash(python3 -c \"import json,sys; d=json.load\\(sys.stdin\\); print\\(''New ETag:'', d[''ETag''], ''| Status:'', d[''Distribution''][''Status'']\\)\")",
       "Bash(aws wafv2 delete-web-acl --name \"CreatedByCloudFront-db998d7a\" --scope CLOUDFRONT --id \"3551f353-bf6b-43a4-85a8-c9bed8035af2\" --lock-token \"32125ea5-1e96-4ff5-993d-da3f5d80456f\" --region us-east-1)",
-      "Bash(terraform version)"
+      "Bash(terraform version)",
+      "Bash(git add backend/context.py backend/data/style.txt frontend/app/layout.tsx frontend/app/page.tsx frontend/components/ChatHeader.tsx frontend/components/EmptyState.tsx frontend/components/twin.tsx)",
+      "Bash(git commit:*)",
+      "Bash(gh workflow list)",
+      "WebFetch(domain:arnauddemesdigitaltwin.com)"
     ]
   }
 }

@@ -2,7 +2,11 @@
 
 import Image from 'next/image';
 
-export default function ChatHeader() {
+interface ChatHeaderProps {
+  isTyping?: boolean;
+}
+
+export default function ChatHeader({ isTyping = false }: ChatHeaderProps) {
   return (
     <div
       className="relative shrink-0 px-5 py-4 overflow-hidden"
@@ -33,7 +37,7 @@ export default function ChatHeader() {
               alt="Arnaud Demes"
               width={44}
               height={44}
-              className="object-cover w-full h-full"
+              className="object-cover w-full h-full object-top"
             />
           </div>
           {/* Online dot */}
@@ -51,7 +55,7 @@ export default function ChatHeader() {
         <div className="flex-1 min-w-0">
           {/* Brand badge */}
           <p
-            className="font-brand font-semibold mb-0.5 tracking-brand"
+            className="font-brand font-semibold mb-0.5"
             style={{
               fontSize: '10px',
               color: '#F28444',
@@ -62,32 +66,39 @@ export default function ChatHeader() {
             Arnaud Demes, CFA
           </p>
 
-          {/* Name — DM Serif Display */}
+          {/* Name */}
           <h2 className="font-display text-white leading-tight" style={{ fontSize: '17px' }}>
             Arnaud&apos;s{' '}
             <span className="italic" style={{ color: '#8DD0F7' }}>Digital Twin</span>
           </h2>
 
-          {/* Subtitle */}
+          {/* Subtitle / typing state */}
           <p
-            className="font-brand mt-0.5 leading-tight truncate"
+            className="font-brand mt-0.5 leading-tight truncate transition-all duration-300"
             style={{ fontSize: '12px', color: 'rgba(255,255,255,0.65)', fontWeight: 300 }}
           >
-            AI Engineer · Finance
+            {isTyping ? (
+              <span style={{ color: '#8DD0F7', fontWeight: 400 }}>Typing…</span>
+            ) : (
+              'AI Engineer · Finance'
+            )}
           </p>
         </div>
 
         {/* Status pill */}
         <div
-          className="shrink-0 flex items-center gap-1.5 px-2.5 py-1 rounded-full"
+          className="shrink-0 flex items-center gap-1.5 px-2.5 py-1 rounded-full transition-all duration-300"
           style={{ background: 'rgba(255,255,255,0.08)', border: '1px solid rgba(255,255,255,0.12)' }}
         >
-          <span className="block w-1.5 h-1.5 rounded-full bg-online" />
           <span
-            className="font-brand font-semibold"
+            className="block w-1.5 h-1.5 rounded-full transition-colors duration-300"
+            style={{ backgroundColor: isTyping ? '#F7A871' : '#22C55E' }}
+          />
+          <span
+            className="font-brand font-semibold transition-colors duration-300"
             style={{ fontSize: '10px', color: '#8DD0F7', letterSpacing: '0.08em' }}
           >
-            Online
+            {isTyping ? 'Thinking' : 'Online'}
           </span>
         </div>
 
