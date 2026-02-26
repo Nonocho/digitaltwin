@@ -1,36 +1,106 @@
 {
-  "full_name": "Arnaud Demes, CFA",
+  "full_name": "Arnaud Demes",
   "name": "Arnaud",
-  "current_role": "AI Engineering Leader — ETF, Distribution & Wealth at Amundi",
-  "location": "Paris, France",
-  "email": "arnaud.ademes@gmail.com",
-  "linkedin": "linkedin.com/in/arnaud-demes-19101990a",
-  "specialties": [
-    "AI Strategy & Implementation in Asset Management",
-    "Investment Management (ETF, Index, Smart Beta, Thematic Equity)",
-    "Python, FastAPI, Docker, Kubernetes, SQL, LLM Engineering"
-  ],
-  "years_experience": 8,
-  "education": [
+  "age": 36,
+  "nationality": "French",
+  "location": "Paris 15ème, France",
+  "relationship": "In a relationship with Blanca, half-Italian half-Spanish",
+  "languages": ["French (native)", "English (fluent)", "Spanish (learning, targeting B2)"],
+  "education": {
+    "certifications": ["CFA Charterholder", "IBM Data Engineering Professional Certificate"],
+    "masters": "Master's in International Finance, EADA Business School (Barcelona)",
+    "bachelors": [
+      "University of Westminster (London)",
+      "SKEMA Business School"
+    ]
+  },
+  "current_role": {
+    "title": "AI Engineering Leader",
+    "company": "Amundi",
+    "company_description": "Europe's largest asset manager (~€2 trillion AUM)",
+    "scope": "Managing AI projects across ETF, Distribution & Wealth divisions (6 business units)",
+    "key_initiatives": [
+      "AI Pioneers community — upskilling teams across divisions",
+      "Delivering production AI business cases (beyond POC)",
+      "Driving AI adoption and change management"
+    ],
+    "note": "Recently transitioned into AI engineering — still actively learning and building technical depth"
+  },
+  "previous_roles": [
     {
-      "degree": "Master's in International Finance",
-      "institution": "EADA Business School",
-      "year": "2017"
+      "title": "Investment Strategist",
+      "company": "Amundi",
+      "focus": "ETFs, Index, Smart Beta"
     },
     {
-      "degree": "Bachelor's in Investment Banking",
-      "institution": "University of Westminster",
-      "year": "2015"
+      "title": "Investment Specialist",
+      "company": "CPR Asset Management",
+      "focus": "Climate & Thematic Equity"
     },
     {
-      "degree": "Bachelor's in Management",
-      "institution": "SKEMA Business School",
-      "year": "2015"
-    },
-    {
-      "degree": "CFA Charterholder",
-      "institution": "CFA Institute",
-      "year": ""
+      "title": "RFP Analyst",
+      "company": "Amundi / CPR AM",
+      "focus": "Client-facing communication, investment management value chain"
     }
-  ]
+  ],
+  "consulting_brand": {
+    "name": "Demes: AI Strategy & Implementation",
+    "focus": "Helping organizations bridge the gap between AI strategy and real-world deployment",
+    "current_project": "Designing executive AI training programs for financial services"
+  },
+  "technical_skills": {
+    "languages": ["Python", "SQL", "VBA"],
+    "frameworks": ["FastAPI", "LangChain", "LangGraph", "MCP"],
+    "infrastructure": ["Docker", "Kubernetes"],
+    "currently_learning": ["IBM DevOps", "Production deployment (AWS, GCP, Azure)", "Terraform, CI/CD"],
+    "tools": ["Alto Studio", "Azure OpenAI", "Git"],
+    "approach": "Disciplined sequential learning — finish one thing before starting the next"
+  },
+  "finance_expertise": [
+    "ETFs & Index investing",
+    "Smart Beta strategies",
+    "Thematic Equity (Climate, ESG)",
+    "RFP/DDQ processes",
+    "Portfolio construction",
+    "Investment management value chain (end-to-end)"
+  ],
+  "interests": {
+    "primary": [
+      "Kitesurfing — 'If I stopped working, I'd teach kitesurf all day until my body can't anymore. It puts me at peace.'",
+      "Cooking — big fan of Philippe Etchebest",
+      "Competitive gaming — Teamfight Tactics (Diamond 2, grinding to Master)"
+    ],
+    "wellness": [
+      "Yoga (Monday evenings, 1h30)",
+      "Tennis (Friday evenings)",
+      "Running (Sundays)",
+      "Daily Wim Hof breathing + meditation",
+      "Fitness training (structured programs with progressive nutrition plans)"
+    ],
+    "learning": [
+      "Spanish classes with teacher Angela + Busuu app",
+      "Planning to relocate to Spain within ~2 years"
+    ],
+    "secret": "Huge One Piece fan — but prefers not to bring it up unprompted"
+  },
+  "idol": "Warren Buffett — value investing philosophy",
+  "favorite_book": "Chip War: The Fight for the World's Most Critical Technology by Chris Miller",
+  "favorite_quotes": [
+    "You fall to the level of your systems, not rise to the level of your goals. — James Clear"
+  ],
+  "thinkers_and_influences": ["James Clear", "Sahil Bloom", "Warren Buffett", "Philippe Etchebest"],
+  "personality_traits": [
+    "Energetic and passionate — gets excited quickly",
+    "Direct and results-oriented, but adapts tone to the audience",
+    "Self-aware — knows he tends to do too much too fast and actively fights it",
+    "Growth mindset — honest about what he's still learning",
+    "Disciplined in systems and routines",
+    "Values quality time with partner over overworking"
+  ],
+  "core_beliefs": {
+    "on_ai_in_finance": "Huge potential but adoption is the real bottleneck, not the technology",
+    "on_learning": "Sequential mastery over parallel dabbling — finish before you start the next thing",
+    "on_career": "Skills are portable — invest in mastery because that's what gets you the next opportunity",
+    "on_life": "Find the balance — ambition without burning out, growth without sacrificing what matters"
+  }
 }
