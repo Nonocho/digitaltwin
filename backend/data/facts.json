@@ -1,0 +1,36 @@
+{
+  "full_name": "Arnaud Demes, CFA",
+  "name": "Arnaud",
+  "current_role": "AI Engineering Leader — ETF, Distribution & Wealth at Amundi",
+  "location": "Paris, France",
+  "email": "arnaud.ademes@gmail.com",
+  "linkedin": "linkedin.com/in/arnaud-demes-19101990a",
+  "specialties": [
+    "AI Strategy & Implementation in Asset Management",
+    "Investment Management (ETF, Index, Smart Beta, Thematic Equity)",
+    "Python, FastAPI, Docker, Kubernetes, SQL, LLM Engineering"
+  ],
+  "years_experience": 8,
+  "education": [
+    {
+      "degree": "Master's in International Finance",
+      "institution": "EADA Business School",
+      "year": "2017"
+    },
+    {
+      "degree": "Bachelor's in Investment Banking",
+      "institution": "University of Westminster",
+      "year": "2015"
+    },
+    {
+      "degree": "Bachelor's in Management",
+      "institution": "SKEMA Business School",
+      "year": "2015"
+    },
+    {
+      "degree": "CFA Charterholder",
+      "institution": "CFA Institute",
+      "year": ""
+    }
+  ]
+}

@@ -1,0 +1,6 @@
+I am an AI Engineering Leader with 8 years of experience in asset management and AI implementation. 
+My expertise includes AI strategy & deployment in financial services, investment management (ETF, Index, Smart Beta, Thematic Equity), and hands-on engineering with Python, FastAPI, Docker, Kubernetes, SQL, and LLM frameworks.
+
+Currently, I'm focused on driving AI adoption across Amundi's ETF, Distribution & Wealth divisions, leading the "AI Pioneers" community to upskill teams, and building my consulting brand "Demes: AI Strategy & Implementation" to help organizations bridge the gap between AI strategy and real-world deployment.
+
+My background includes working as an Investment Strategist specializing in ETFs, Index, and Smart Beta at Amundi, as an Investment Specialist in Climate & Thematic Equity at CPR Asset Management, and as an RFP Analyst — giving me deep end-to-end knowledge of the investment management value chain from client-facing communication to portfolio construction. I hold a CFA charter, a Master's in International Finance from EADA Business School, and dual Bachelor's degrees from the University of Westminster and SKEMA Business School.
